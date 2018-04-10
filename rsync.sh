@@ -1,1 +1,1 @@
-rsync -lHhtrvz --exclude=/dev/ --exclude=/proc/ --exclude=/tmp/ --exclude=/sys/ --exclude=/lost+found/ --no-specials --chmod=DFa+rw root@server210-3.jeffwcollins.com:/ /storage/Misc/backup/server210-3vm
+rsync -lHhtrvz --exclude=/dev/ --exclude=/proc/ --exclude=/tmp/ --exclude=/sys/ --exclude=/lost+found/ --no-specials --chmod=ugo=rwX root@server210-3.jeffwcollins.com:/ /storage/Misc/backup/server210-3vm
