@@ -14,10 +14,16 @@ then
 
 echo -n "Enter the Server name that you would like to update and press [ENTER]: "
 read servername
-echo "Now Backing up $servername, please wait"
-ssh root@"$servername".jeffwcollins.com "yum update -y --skip-broken && exit"
-echo "Server $servername backup completed Successfully"
-
+echo "Now preparing $servername for backup, please wait"
+export servername
+./prep.sh
+#echo "Server $servername Cleanup completed successfully"
+#./rsync-server.sh
+#echo "Server $servername RSYNC completed successfully"
+#./tar-server.sh
+#echo "Server $servername Backup archived successfully"
+#./cleanup.sh
+#echo "Server $servername backup files removed successfully"
 else
 
     exit
