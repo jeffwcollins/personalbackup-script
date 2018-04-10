@@ -1,11 +1,1 @@
-#
-ssh -t root@server210-3.jeffwcollins.com "apt-get update"
-#
-ssh -t root@server210-3.jeffwcollins.com 'apt-get upgrade -y'
-#
-ssh -t root@server210-3.jeffwcollins.com 'apt-get autoremove'
-#
-ssh -t root@server210-3.jeffwcollins.com 'apt-get clean'
-#
-ssh -t root@server210-3.jeffwcollins.com 'apt-get autoclean'
-#
+ssh -t root@server210-3.jeffwcollins.com "apt-get update; apt-get ugrade -y; apt-get autoremove; apt-get clean; apt-get autoclean"
