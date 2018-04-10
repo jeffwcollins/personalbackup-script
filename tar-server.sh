@@ -8,6 +8,5 @@ env GZIP=-9 tar -czf "/storage/Misc/backup/archived/"$servername"$(date '+%d%m%y
 rm $LIST
 #
 echo "Server $servername Backup archived successfully"
-read servername
 export servername
 ./cleanup.sh
