@@ -1,4 +1,15 @@
-ssh -t root@server210-3.jeffwcollins.com 'apt-get update'
-ssh -t root@server210-3.jeffwcollins.com 'apt-get upgrade -y'
-ssh -t root@server210-3.jeffwcollins.com 'apt-get autoremove'
-ssh -t root@server210-3.jeffwcollins.com 'apt-get autoclean'
+ssh -t root@server210-3.jeffwcollins.com << EOF
+'apt-get update'
+EOF
+
+ssh -t root@server210-3.jeffwcollins.com << EOF
+'apt-get upgrade -y'
+EOF
+
+ssh -t root@server210-3.jeffwcollins.com << EOF
+'apt-get autoremove'
+EOF
+
+ssh -t root@server210-3.jeffwcollins.com << EOF
+'apt-get autoclean'
+EOF
